@@ -130,3 +130,9 @@ variable "route_keys_enabled" {
     this will work when the `true` setting generates the error `The "for_each" value depends on resource attributes...`
     EOT
 }
+
+variable "transit_gateway_description" {
+  type        = string
+  default     = ""
+  description = "Transit Gateway description. If not provided, one will be automatically generated."
+}
